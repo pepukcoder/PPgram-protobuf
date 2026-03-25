@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package ppgram;
+
+option go_package = "github.com/ppgram/server/protomsg;protomsg";
+option csharp_namespace = "PPgram.Protobuf";
+
+message ClientUpdateRequest {
+
+}
+
+message ClientUpdateResponse {
+
+}
+
+message ServerUpdateRequest {
+
+}
+
+message ServerUpdateResponse {
+    
+}
