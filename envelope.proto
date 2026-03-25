@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package ppgram;
+
+option go_package = "github.com/ppgram/server/protomsg;protomsg";
+option csharp_namespace = "PPgram.Protobuf";
+
+message Request {
+  string op = 1;
+  bytes body = 2;
+}
+
+message Response {
+  uint32 status_code = 1;
+  string message = 2;
+  bytes body = 3;
+}
