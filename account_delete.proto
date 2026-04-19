@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package ppgram;
+
+option go_package = "github.com/ppgram/server/protomsg;protomsg";
+option csharp_namespace = "PPgram.Protobuf";
+
+message AccountDeleteRequest {
+    string username = 1;
+    string password = 2;
+}
+
+message AccountDeleteResponse {
+    uint64 timestamp = 1;
+}
+
+message AccountDeleteCancelRequest {
+    string username = 1;
+    string password = 2;    
+}
